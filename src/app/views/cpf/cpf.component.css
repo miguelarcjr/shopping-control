@@ -1,0 +1,58 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #210661;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  padding: 25px 0;
+}
+
+.logo-title {
+  color: red;
+  font-size: 1.7rem;
+}
+.logo-img {
+  width: 80px;
+}
+
+.cpf-input {
+  margin-top: 20px;
+  width: 260px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50px;
+  -webkit-box-shadow: inset 0px 1px 10px -1px rgba(0,0,0,0.7);
+-moz-box-shadow: inset 0px 1px 10px -1px rgba(0,0,0,0.7);
+box-shadow: inset 0px 1px 10px -1px rgba(0,0,0,0.7);
+}
+.cpf-input::placeholder {
+  color: red;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.container button {
+  background-color: red;
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 6px 6px 7px -3px rgba(0,0,0,0.7);
+  -webkit-box-shadow: 6px 6px 7px -3px rgba(0,0,0,0.7);
+  -moz-box-shadow: 6px 6px 7px -3px rgba(0,0,0,0.7);
+}

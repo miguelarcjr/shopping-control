@@ -61,3 +61,18 @@
   border:solid 2px rgb(179, 2, 2);
   outline: none;
 }
+
+.container .scan {
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  padding-right: 60px;
+  margin: 0;
+}
+
+.container .scan img {
+  border: none;
+  opacity: 0.7;
+}

@@ -1,5 +1,8 @@
 <div class="main">
   <div class="container">
+    <button class="scan" (click)="navigateToScanner()">
+      <img class="scan-icon" src="assets/icons/qr-code-scan.svg" alt="">
+    </button>
     <img class="logo-img" src="assets/logo/logo.svg" alt="">
     <h1 class="logo-title">Shopping Point</h1>
     <input mask="000.000.000-00" [(ngModel)]="cpf" class="cpf-input" type="text" placeholder="Digite o seu CPF.">

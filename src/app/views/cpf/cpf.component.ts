@@ -26,6 +26,10 @@ export class CpfComponent implements OnInit {
     }
   }
 
+  navigateToScanner(): void {
+    this.router.navigate(['/scanner']);
+  }
+
   validarCpf(cpf: string): Boolean {
     return cpf.length == 11;
   }

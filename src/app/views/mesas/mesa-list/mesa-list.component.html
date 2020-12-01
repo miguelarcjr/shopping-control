@@ -1,25 +1,24 @@
 <div class="main">
-  <div class="container">
-    <div class="mesa-item">
-      <p>MESA BRABA</p>
-    </div>
-    <div class="mesa-item">
-      <p>MESA BRABA</p>
-    </div>
-    <div class="mesa-item">
-      <p>MESA BRABA</p>
-    </div>
-    <div class="mesa-item">
+  <div class="container" *ngIf='ready'>
+    <div *ngFor="let mesa of mesas" class="mesa-item" [ngClass]="{'selected': idSelecionado === mesa.id, 'disabled': mesa.ocupada === true}" (click)="onMesaClick(mesa.id, mesa.ocupada)">
       <img src="assets/icons/mesa.svg" alt="Mesa" class="mesa-icon">
       <div class="mesa-info">
         <div class="numero-mesa">
-          <span>01</span>
+          <span>{{mesa.id}}</span>
         </div>
         <div class="espaço">
           <img src="assets/icons/people.svg" alt="Pessoa" class="icon-espaco">
-          <span>05</span>
+          <span>{{mesa.quantidadelimite}}</span>
         </div>
       </div>
     </div>
   </div>
+  <button class="qrcode-btn" (click)="onSubmit()" *ngIf="idSelecionado > 0">
+    <span style="font-size: 3em; color: Tomato;">
+      <i class="fas fa-qrcode"></i>
+    </span>
+    <p>Gerar Qr-Code</p>
+  </button>
 </div>
+
+<link href = "https://fonts.googleapis.com/css2? family = PT + Sans & display = swap" rel = "folha de estilo">

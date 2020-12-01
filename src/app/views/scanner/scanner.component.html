@@ -1,0 +1,6 @@
+
+<div class="main">
+  <div class="container">
+    <zxing-scanner [formats]="['QR_CODE', 'EAN_13', 'CODE_128', 'DATA_MATRIX']" [(device)]="currentDevice" (camerasFound)="onCamerasFound($event)" (scanSuccess)="onCodeResult($event)"></zxing-scanner>
+  </div>
+</div>

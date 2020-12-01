@@ -1,0 +1,21 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #210661;
+  flex-flow: column;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  justify-content: space-around;
+  background-color: #FC6704;
+  flex-direction: start;
+  border-radius: 15px;
+  padding: 25px 5px;
+  max-height: 500px;
+  overflow: auto;
+}

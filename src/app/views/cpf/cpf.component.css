@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400;1,500&display=swap');
+
 .main {
   display: flex;
   align-items: center;
@@ -17,8 +19,10 @@
 }
 
 .logo-title {
-  color: red;
+  color: rgb(179, 2, 2);
   font-size: 1.7rem;
+  /*font-family:'PT Sans', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
 }
 .logo-img {
   width: 80px;
@@ -30,29 +34,30 @@
   height: 50px;
   text-align: center;
   font-size: 1.5rem;
-  border: none;
-  border-radius: 50px;
-  -webkit-box-shadow: inset 0px 1px 10px -1px rgba(0,0,0,0.7);
--moz-box-shadow: inset 0px 1px 10px -1px rgba(0,0,0,0.7);
-box-shadow: inset 0px 1px 10px -1px rgba(0,0,0,0.7);
+  border:solid 2px rgb(179, 2, 2);;
+  border-radius: 5px;
+  outline: none;
+  color: rgb(179, 2, 2);
+  font-family:'PT Sans', sans-serif;
+  background-color: transparent;
 }
 .cpf-input::placeholder {
-  color: red;
+  color: rgb(180, 180, 180);
   text-align: center;
   font-size: 1.5rem;
+  font-family:'PT Sans', sans-serif;
 }
 
 .container button {
-  background-color: red;
+  background-color: rgb(179, 2, 2);
   margin-top: 20px;
   width: 150px;
   height: 50px;
   color: white;
-  border-radius: 50px;
-  border: none;
+  border-radius: 5px;
   font-size: 1.2rem;
   font-weight: bold;
-  box-shadow: 6px 6px 7px -3px rgba(0,0,0,0.7);
-  -webkit-box-shadow: 6px 6px 7px -3px rgba(0,0,0,0.7);
-  -moz-box-shadow: 6px 6px 7px -3px rgba(0,0,0,0.7);
+  font-family:'PT Sans', sans-serif;
+  border:solid 2px rgb(179, 2, 2);
+  outline: none;
 }

@@ -1,0 +1,25 @@
+<div class="main">
+  <div class="container-mesa" >
+    <div class="icons-btn">
+        <button class="checked" (click)="onConfirm()">
+            <img src="assets/icons/Icon awesome-check.svg" alt="Pessoa" class="icon-espaco">
+        </button>
+        <button class="close" (click)="onReject()">
+            <img src="assets/icons/Icon ionic-ios-close-circle.svg" alt="Pessoa" class="icon-espaco">
+        </button>
+
+    </div>
+    <div class="mesa-item">
+      <img src="assets/icons/mesa.svg" alt="Mesa" class="mesa-icon">
+      <div class="mesa-info">
+        <div class="numero-mesa">
+          <span>{{mesa.id}}</span>
+        </div>
+        <div class="espaço">
+          <img src="assets/icons/people.svg" alt="Pessoa" class="icon-espaco">
+          <span>{{mesa.quantidadelimite}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

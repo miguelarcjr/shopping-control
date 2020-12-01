@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MesaListComponent } from './mesa-list.component';
+import { MesaComponent } from './mesa.component';
 
-describe('MesaListComponent', () => {
-  let component: MesaListComponent;
-  let fixture: ComponentFixture<MesaListComponent>;
+describe('MesaComponent', () => {
+  let component: MesaComponent;
+  let fixture: ComponentFixture<MesaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MesaListComponent ]
+      declarations: [ MesaComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MesaListComponent);
+    fixture = TestBed.createComponent(MesaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

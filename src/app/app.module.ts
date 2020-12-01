@@ -1,13 +1,17 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-
-import { NgxMaskModule, IConfig } from 'ngx-mask'
-
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { IConfig, NgxMaskModule } from 'ngx-mask';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CpfComponent } from './views/cpf/cpf.component';
 import { MesaListComponent } from './views/mesas/mesa-list/mesa-list.component';
-import { FormsModule } from '@angular/forms';
+import { MesaComponent } from './views/mesas/mesa/mesa.component';
+import { VagaQrcodeComponent } from './views/vagas/vaga-qrcode/vaga-qrcode.component';
+import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
+import { ScannerComponent } from './views/scanner/scanner.component';
 
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
 
@@ -15,13 +19,19 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
   declarations: [
     AppComponent,
     CpfComponent,
-    MesaListComponent
+    MesaListComponent,
+    MesaComponent,
+    VagaQrcodeComponent,
+    ScannerComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     NgxMaskModule.forRoot(),
-    FormsModule
+    FormsModule,
+    NgxQRCodeModule,
+    ZXingScannerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

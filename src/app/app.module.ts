@@ -12,6 +12,8 @@ import { VagaQrcodeComponent } from './views/vagas/vaga-qrcode/vaga-qrcode.compo
 import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
 import { ZXingScannerModule } from '@zxing/ngx-scanner';
 import { ScannerComponent } from './views/scanner/scanner.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
 
@@ -31,7 +33,8 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
     NgxMaskModule.forRoot(),
     FormsModule,
     NgxQRCodeModule,
-    ZXingScannerModule
+    ZXingScannerModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

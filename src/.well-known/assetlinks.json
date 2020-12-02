@@ -1,0 +1,9 @@
+[
+  {
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.arcangelo.shoppingpoint",
+    "sha256_cert_fingerprints": ["92:0C:A3:3E:B3:F4:C9:4F:2E:D9:1C:40:CE:6C:E7:EE:68:66:71:9A:37:B8:A3:12:67:67:4B:36:9D:7C:12:C1"]
+  }
+}]
